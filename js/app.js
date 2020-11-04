@@ -17,7 +17,7 @@ function StoreMaster(cityName,minCustormers,maxCustormers,averageCookieSale){
   allStoresInfo.push(this);
 }
 
-//these create new object instances for each store
+//these create new object instances for each store, you can add more if you are reading this
 var seattleStoreFront = new StoreMaster('Seattle', 23, 65, 6.3);
 var tokyoStoreFront = new StoreMaster('Tokyo', 3, 24, 1.2);
 var dubaiStoreFront = new StoreMaster('Dubai', 11, 38, 3.7);
@@ -60,7 +60,8 @@ var callThisToUpdateaverageCookieSold = function(){
 
 callThisToUpdateaverageCookieSold();
 
-//this function will insert the top line of the time row with an empty space at the beginning, also gives the element a class name
+//this function will insert the top line of the time row with an empty space at the beginning, also gives the element a class name, the text content for thelement
+//with the emepty ' ' string is just to make the top left corner of the table empty and look invisible
 var timesHeaders = function(){
   var tableParent = document.getElementById('helloTest');
   var trElement = document.createElement('tr');
@@ -91,7 +92,6 @@ StoreMaster.prototype.renderThetable= function(){
 
     trElement.appendChild(tdElement);
   }
-  
 };
 
 //these was just to called the functions above

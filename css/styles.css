@@ -9,12 +9,12 @@ body{
 
 td:not(.notthisROW) {
   padding: 5px;
-  border: black solid 2px;
+  border: black solid 1px;
 }
 
 th:not(.notthisROW) {
   padding: 5px;
-  border: black solid 2px;
+  border: black solid 1px;
 }
 
 .notthisROW{
