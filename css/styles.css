@@ -1,0 +1,22 @@
+body{
+ width: 1060px;
+ height: 1500px;
+}
+
+#wholetableforSales {
+  padding: 20px;
+}
+
+td:not(.notthisROW) {
+  padding: 5px;
+  border: black solid 2px;
+}
+
+th:not(.notthisROW) {
+  padding: 5px;
+  border: black solid 2px;
+}
+
+.notthisROW{
+  font-weight: bold;
+}
