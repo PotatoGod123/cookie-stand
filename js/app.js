@@ -17,6 +17,7 @@ function StoreMaster(cityName,minCustormers,maxCustormers,averageCookieSale){
   allStoresInfo.push(this);
 }
 
+//these create new object instances for each store
 var seattleStoreFront = new StoreMaster('Seattle', 23, 65, 6.3);
 var tokyoStoreFront = new StoreMaster('Tokyo', 3, 24, 1.2);
 var dubaiStoreFront = new StoreMaster('Dubai', 11, 38, 3.7);
@@ -31,7 +32,7 @@ StoreMaster.prototype.customerMath = function(){
   return this.averageCustomer.push(pushNumberCus);
 };
 
-
+//this runs the method above! 
 var callThisToUpdateaverageCustomerInfo = function(){
   for(var i =0;i<timesHours.length;i++){
     for(var j =0;j<allStoresInfo.length;j++){
@@ -41,12 +42,14 @@ var callThisToUpdateaverageCustomerInfo = function(){
 };
 
 callThisToUpdateaverageCustomerInfo();
+
 // this method is used in the function bellow it to caculated the cookies and put them all in the this.averageCookieSold array
 StoreMaster.prototype.cookiesMaths = function(i){
   var productCusCoo = this.averageCookieSale * this.averageCustomer[i];
   return this.averageCookieSold.push(Math.round(productCusCoo));
 };
 
+// this functions runs method above with informator from the object array to get and insent cookies sold for each hour
 var callThisToUpdateaverageCookieSold = function(){
   for(var i = 0;i<timesHours.length;i++){
     for(var j=0;j<allStoresInfo.length;j++){
@@ -57,6 +60,7 @@ var callThisToUpdateaverageCookieSold = function(){
 
 callThisToUpdateaverageCookieSold();
 
+//this function will insert the top line of the time row with an empty space at the beginning, also gives the element a class name
 var timesHeaders = function(){
   var tableParent = document.getElementById('helloTest');
   var trElement = document.createElement('tr');
@@ -73,7 +77,7 @@ var timesHeaders = function(){
   }
 };
 
-// this will insert into html
+// this will insert into html whatever object instance you made with StoreMaster
 StoreMaster.prototype.renderThetable= function(){
   var tableParent = document.getElementById('helloTest');
   var trElement = document.createElement('tr');
@@ -89,6 +93,8 @@ StoreMaster.prototype.renderThetable= function(){
   }
   
 };
+
+//these was just to called the functions above
 timesHeaders();
 seattleStoreFront.renderThetable();
 tokyoStoreFront.renderThetable();
