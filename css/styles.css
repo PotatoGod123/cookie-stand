@@ -1,6 +1,7 @@
 body{
- width: 960px;
- height: 1500px;
+  background-color: rgb(167, 72, 38);
+  width: 1300px;
+  height: 1440px;
 }
 
 #wholetableforSales {
@@ -19,4 +20,51 @@ th:not(.notthisROW) {
 
 .notthisROW{
   font-weight: bold;
+}
+
+header section {
+  background-color: rgb(255, 174, 201);
+  font-family: 'Volkhov', serif;
+  color: white;
+}
+header section h1{
+  font-size: 71px;
+  text-align: center;
+  line-height: 69px;
+}
+
+header section img{
+  margin-left: 267px;
+}
+
+.pageNav{
+  border: rgb(203, 151, 140)solid 10px;
+  display: block ruby;
+  height: 74px;
+  font-size: 71px;
+
+}
+ header nav ol li{
+   margin-left: 132px;
+ }
+
+ .salePage{
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: rgb(203, 151, 140);
+  border-right-width: 10px;
+  border-right-style: solid;
+  border-right-color: rgb(203, 151, 140);
+  padding-left: 110px;
+  margin-left: 0px;
+  width: 149.883px;
+  padding-right: 110px;
+}
+
+.contactPage{
+  margin-left: -64px;
+}
+
+#totalCell{
+  display: table-caption;
 }

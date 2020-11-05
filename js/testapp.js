@@ -51,9 +51,9 @@
 //       ulAppend.textContent = timesHours[j]+' '+totalSold[j]+this.cookiesLOL;
 //       // listParent.appendChild(ulAppend);
 //     }
-//     this.totalCookies= totalSold.reduce(function(a,b){
-//       return a+b;
-//     },0),
+// this.totalCookies= totalSold.reduce(function(a,b){
+//   return a+b;
+// },0),
 //     ulAppend.textContent = 'Total: '+this.totalCookies+this.cookiesLOL;
 //     // listParent.appendChild(ulAppend);
 //   },
