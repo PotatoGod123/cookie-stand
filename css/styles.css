@@ -6,16 +6,37 @@ body{
 
 #wholetableforSales {
   padding: 20px;
+  margin-bottom: 1px;
+  margin-top: -59px;
+  margin-bottom: 194px;
+  font-family: 'Syne Tactile', cursive;
 }
+
 
 td:not(.notthisROW) {
   padding: 5px;
   border: black solid 1px;
+  background-color: lightcoral;
+  color: wheat;
+  text-align: center;
+  padding: 2px;
 }
 
 th:not(.notthisROW) {
   padding: 5px;
   border: black solid 1px;
+  background-color: lightcoral;
+  color: wheat;
+  text-align: center;
+  padding: 2px;
+  
+}
+td{
+  background-color: lightcoral;
+  color: wheat;
+  text-align: center;
+  padding: 2px;
+  
 }
 
 .notthisROW{
@@ -46,6 +67,7 @@ header section img{
 }
  header nav ol li{
    margin-left: 132px;
+   font-family: 'Turret Road', cursive;
  }
 
  .salePage{
@@ -62,9 +84,87 @@ header section img{
 }
 
 .contactPage{
-  margin-left: -64px;
+  margin-left: -134px;
 }
 
 #totalCell{
   display: table-caption;
+}
+
+#form{
+  display: table-caption;
+  margin-left: 582px;
+}
+
+#firstParagrpah{
+  background-color: rgb(216, 169, 104);
+  border: 20px ridge rgb(203, 151, 140);
+  margin-top: 75px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+#chinook{
+  margin-bottom: 0px;
+  margin-left: 818px;
+  margin-top: -250px;
+}
+
+#familyfishtext{
+  background-color: rgb(216, 169, 104);
+  border: dotted 13px rgb(203, 151, 140);
+  max-width: 608px;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+}
+
+#storeheaders{
+  background-color: black;
+  border: solid coral 4px;
+  max-width: 124px;
+  color: red;
+  float: left;
+}
+
+#paragraphbyheaders{
+  border: hidden 10px;
+  background-color: lemonchiffon;
+  text-align: left;
+  max-width: 375px;
+}
+
+footer{
+  background-color: rgb(255, 141, 201);
+  padding-bottom: 4px;
+  text-align: right;
+}
+
+
+fieldset{
+  border: solid pink 4px;
+  color: antiquewhite;
+  background-color: indianred;
+  margin-top: 30px;
+  font-family: 'Syne Tactile', cursive;
+}
+
+button{
+  color: red;
+  background: aqua;
+}
+
+table {
+  margin-left: 233px;
+  margin-top: -59px
+  
+}
+
+#fishcookie{
+  margin-left: 528px;
+  margin-top: 21px;
+}
+#fishschool{
+  margin-top: 51px;
 }
