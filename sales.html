@@ -5,6 +5,8 @@
     <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
     <link href="./css/styles.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">  
   </head>
   <body>
     <header>
@@ -21,6 +23,33 @@
       </nav>
     </header>
     <main>
+      <article id="fishcookie">
+        <img src="./img/frosted-cookie.jpg">
+      </article>
+      <section id="form">
+        <form>
+          <fieldset >
+            <h2>Want to add a store? Fill out the form below!</h2>
+            <legend>Store Information</legend>
+            <label>Your City Location:
+              <input name="cityname" type="text" />              
+            </label>
+            <label>Your Mininum Customers: 
+              <input name="mincustomer" type="text"/>
+            </label>
+            <label>Your Maximun Customers:
+              <input name="maxcustomer" type="text"/>
+            </label>
+            <label>Average Cookie sold per Customers:
+              <input name="averagecookie" type="text"/>
+            </label>
+            <button type="submit" name="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <article id="fishschool">
+        <img src="./img/fish.jpg">
+      </article>
       <section>
         <table id="wholetableforSales">
         <tbody  id="helloTest">
@@ -32,6 +61,19 @@
       </table>
       </section>
     </main>
+    <footer>
+      <h5>&copy;Cristian Robles</h5>
+      <section>
+        <address>
+          <h2>Contact our Main Store!!</h2>
+          <ul>
+            <li>Phone: 012-345-6789</li>
+            <li>Address: 14322 SalmonRock Dr, 13243 Seattle WA</li>
+            <li>Email :<a href="mailto:fishcookies123@gmail.com"> fishcookies123@gmail.com</a></li>
+          </ul>
+        </address>
+      </section>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
