@@ -26,13 +26,10 @@ var tokyoStoreFront = new StoreMaster('Tokyo', 3, 24, 1.2);
 var dubaiStoreFront = new StoreMaster('Dubai', 11, 38, 3.7);
 var parisStoreFront = new StoreMaster('Paris', 20, 38, 2.3);
 var limaStoreFront = new StoreMaster('Lima', 2, 16, 4.6);
-
-
-
-
+//under here is event listener looking for form to submit then trigget function
 formParent.addEventListener('submit',newStore);
-
-
+//this fuction will add new store from form and add it to the bottom while
+//updating the footer row with a special render function
 function newStore(event){
   event.preventDefault();
   var remove_foot_Row = document.getElementById('footrowremove');
@@ -55,23 +52,6 @@ function newStore(event){
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // this method will be run in the for loop undereath to add the random customer per hour to this.averageCustomer key
 StoreMaster.prototype.customerMath = function(){
   this.minCustormers = Math.ceil(this.minCustormers);
@@ -89,8 +69,6 @@ var callThisToUpdateaverageCustomerInfo = function(){
   }
 };
 
-
-
 // this method is used in the function bellow it to caculated the cookies and put them all in the this.averageCookieSold array
 StoreMaster.prototype.cookiesMaths = function(i){
   var productCusCoo = this.averageCookieSale * this.averageCustomer[i];
@@ -106,10 +84,6 @@ var callThisToUpdateaverageCookieSold = function(){
   }
 };
 
-
-
-
-
 //this method will caculate total cokies sold in all city per hour 
 // error for this bs was it was concatenated strings instead of intergers, 
 // solution was to declare variable as a interger and to parseInt info from Object Instance
@@ -122,8 +96,6 @@ var call_this_to_update_totals_per_Hour = function(){
     total_cookie_sold_per_Hour.push(tempRary);
   }
 };
-
-
 
 // this method is used to caculate total cookies for the day 
 StoreMaster.prototype.allCookiesSold = function(){
@@ -138,8 +110,6 @@ var callthistoupdatetotalcookiesSold = function(){
     allStoresInfo[i].allCookiesSold();
   }
 };
-
-
 
 var dailyTotaltotal = function(){
   var tempRary=0;
@@ -210,7 +180,8 @@ var call_this_to_render_the_footer_Table =function(){
   tdElement.textContent= totaldailyCookies;
   trElement.appendChild(tdElement);
 };
-
+// this is the same as the before footer render function but tweaked to put in
+// new values from updated information, used in event listener above!!
 var special_call_this_to_render_the_footer_Table =function(){
   var table_footer_Parent = document.getElementById('thetableFooter');
   var trElement = document.createElement('tr');

@@ -84,7 +84,8 @@ header section img{
 }
 
 .contactPage{
-  margin-left: -134px;
+  margin-left: -143px;
+  font-size: 62px;
 }
 
 #totalCell{
@@ -167,4 +168,11 @@ table {
 }
 #fishschool{
   margin-top: 51px;
+}
+
+#cutterarticle{
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 1200px;
+  margin-bottom: -86px;
 }
