@@ -13,3 +13,4 @@ This website will show someone's site dedicated to selling special salmon cookie
 - Took a bit to figure out the problem but once I have solved it went as a breeze, took less longer than I thought it would only 3hours
 - I'll add more designs later 
 - Contrustor Fuctions are a dousy, fyi test.js is just a file to keep old code and test some stuff, not linked to anything.
+- Website is complete, has events and forms!!!
